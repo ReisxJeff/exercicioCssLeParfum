@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container,
+footer > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+header, footer{
+    padding-top: 16px;
+    background-color: rgb(189, 142, 238);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+h1{
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    max-width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    background-color:rgb(174, 116, 236);
+    padding: 16px 0;
+    display: none;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+nav li a{
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.menu-hamburguer{
+    width: 32px;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.container-flex{
+    display: flex;
+}
+
+#carossel-img{
+    max-width: 1024px;
+    width: 100%;
+    margin: 15px auto;
+
+}
+
+#carossel-img img{
+    height: 400px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+#sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+.info-loja,
+.promocoes{
+    background-color: rgb(189, 142, 238);
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.promocoes ul li img{
+    height: 200px;
+    max-width: 100%;
+}
+
+.promocoes ul li{
+    list-style: none;
+}
+
+.promocoes ul li h3{
+    margin: 16px 0;
+}
+
+button{
+    display: block;
+    width: 80%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(46, 163, 60);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.promocoes li strong{
+    margin: 16px 0;
+    display: block;
+}
+
+.perfume{
+    max-width: 320px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+.form-campo label{
+    font-weight: bold;
+    display: block;
+
+}
+
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form{
+    max-width: 350px;
+}
+
+.contato{
+    background-color: rgb(189, 142, 238);
+}
+
+.footer{
+    background-color:rgb(174, 116, 236);
+    padding: 15px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+@media screen and (max-width: 767px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        max-width: 90%;
+        }
+
+    .container-flex{
+        display: block;
+    }
+
+
+    nav li{
+        display: block;
+        padding: 2px;
+    }
+
+    
+    .menu-hamburguer{
+    margin-top: 8px;
+    }
+
+    #carossel-img{
+        max-width: 100%;
+    }
+
+    #carossel-img img{
+        height: 275px;
+    }
+    
+    #sobre-a-loja img{
+        max-width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .promocoes ul li img{
+        height: 200px;
+        max-width: 100%;
+    }
+    
+    .promocoes ul li{
+        list-style: none;
+    }
+    
+    .promocoes ul li h3{
+        margin: 16px 0;
+    }
+    
+    button{
+        display: block;
+        width: 80%;
+        padding: 8px 0;
+        border: none;
+        background-color: rgb(46, 163, 60);
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    .promocoes li strong{
+        margin: 16px 0;
+        display: block;
+    }
+    
+    .perfume{
+        max-width: 320px;
+        width: 80%;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    html, body{
+            overflow-x: hidden;
+        }
+
+    .container{
+            max-width: 90%;
+            }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    nav li a{
+        font-size: 20px;
+        display: block;
+    }
+
+    .sobre-a-loja {
+            display: block;
+        }
+
+    .info-loja{
+        padding: 30px;
+    }
+
+    .info-loja h2{
+        font-size: 35px;
+    }
+
+    .info-loja p{
+        font-size: 25px;
+    }
+
+    #sobre-a-loja img{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .perfume h3{
+        font-size: 28px;
+    }
+
+    .perfume h2{
+        font-size: 30px;
+    }
+
+    .perfume h4{
+        font-size: 20px;
+    }
+
+    button{
+        width: 90%;
+        font-size: 26px;
+    }
+
+    .contato h2{
+        font-size: 30px;
+    }
+
+    .form-campo label{
+    font-size: 28px;
+    }
+
+    .form-campo input,
+    .form-campo textarea{
+    border: 25xp;
+    font-size: 25px;
+    }
+}
